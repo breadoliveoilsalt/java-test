@@ -1,5 +1,8 @@
 scraps*
 
+### Java ###
+*.class
+
 ### JetBrains IDEA ###
 
 .idea/*
