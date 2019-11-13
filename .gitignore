@@ -18,7 +18,7 @@ scraps*
 .gradle
 /build/
 !/build/libs/
-### Above: trying to keep the jar file available ###
+### Above: trying to keep the jar file available ### ###
 
 # Ignore Gradle GUI config
 gradle-app.setting
