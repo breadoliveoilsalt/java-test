@@ -19,3 +19,11 @@ dependencies {
 
 
 mainClassName = 'App'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'App'
+        )
+    }
+}
