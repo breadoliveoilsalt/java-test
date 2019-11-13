@@ -6,4 +6,9 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
+
+    @Test public void testAddTwo() {
+        App classUnderTest = new App();
+        assertEquals(5, classUnderTest.addTwo(3));
+    }
 }
