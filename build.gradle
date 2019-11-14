@@ -22,38 +22,16 @@ dependencies {
     //implementation 'org.ajoberstar.grgit:grgit-core:4.0.0-rc.1'
 }
 
-//ext {
-//    git = org.ajoberstar.grgit.Grgit.grgit.open()
-//
-//    // Get commit id of HEADk.
-//    revision = git.head().id
-//}
-//
-
 jar {
-    // sets the entire file name, that's it => archiveFileName = "nameSetInBuildGradleJavaTest"
-    // the two below result in a jar file name with just the name and the version number. Really only need to specify
+    // This line sets the entire file name, that's it => archiveFileName = "nameSetInBuildGradleJavaTest"
+    // Conversely, the two below result in a jar file name with just the name and the version number. Really only need to specify
     // the version number to get this affect.
     archiveBaseName = "testJava"
     archiveVersion = "1.0.0-${grgit.head().abbreviatedId}"
+    // Below is needed to give the jar file it's meta data so running the jar file works
     manifest {
         attributes(
                 'Main-Class': 'App'
         )
     }
 }
-
-
-//getVersion()
-//
-//ext.getVersion {
-//    printLn "We made it!"
-//}
-//def getVersionName = { ->
-//    def stdout = new ByteArrayOutputStream()
-//    exec {
-//        commandLine 'git', 'describe', '--tags'
-//        standardOutput = stdout
-//    }
-//    return stdout.toString().trim()
-//}
