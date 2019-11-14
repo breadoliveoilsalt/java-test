@@ -1,7 +1,8 @@
 plugins {
     id 'java'
     id 'application'
-    id 'org.ajoberstar.grgit' version '3.1.1'
+    //id 'org.ajoberstar.grgit' version '3.1.1'
+    id "org.ajoberstar.grgit" version "4.0.0-rc.1"
 }
 
 // application requires mainClassName below
@@ -14,7 +15,7 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    jcenter()
+    //jcenter()
 }
 
 dependencies {
