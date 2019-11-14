@@ -1,9 +1,15 @@
 language: java
-
 before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 cache:
   directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+deploy:
+  provider: releases
+  api_key:
+    secure: qjnQY5I2SmywlRENnHsaEJfKDB0jYCFfzEK4aWPmeQs4rAoYjCvkOZul3JlncsBnxuyLR9cBZX434uRdvEcjCfo7TUOA3h0NgB8Cvgyah8VQlQoOw+LGy77PO/5mTUn3Q+h0aa5KT44wNxbOsr1nrGh66Mp6lDtgDwC8+ID0+pmdWUjnGYl8HT0pn6Lp6hHg0Xk697hJ2nw/8Tzsh+qprOe0v3AGD5rhDwF1UUywWZj1IYI9h0brPT3ip8iw77803OiGR2bC2NXJX7HTfs9gzu68zykvjDbiNJsk9xQgkmtcZf/5UBZomBZKBHOsVKFeQrb6/uu6oxohHRf6dOLyANeW+GTEwFUF65i9W1Q5A+Q3DNrQl+Vxa4smeBBh2RCBZJboNsvv3JmWBFq3G/rAM1xn7RsabEcVZ6qteMW5/qR3LfSPc4uwP02Bj2CFRBh2dPGdzYQEm4/msXmygZhsWv/mJIkpfDZvSP1DQcdVjyXCUs9uMnRepimk6BqyiJJiGUweHiYjvyGcdZLdGURftoUG5XpUxbo6UGOMn1VCg+pLem6x9PDMoeum5KpSjnzixxDs66yH9L9X3U2BldtxSnUKETWpvvcn73P6ktI/cZfIwSY0tRYFS5EajhFYdTRuyqfCnnvkfwgXjiOZWn0Zw76Mei62Zlal7HopdogXahQ=
+  file: "./build/libs/testJava-1.0.0-77e2dbb.jar"
+  on:
+    repo: breadoliveoilsalt/java-test
