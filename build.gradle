@@ -6,7 +6,7 @@ plugins {
 
 // application requires mainClassName below
 mainClassName = 'App'
-version = "1.0.0-${grgit.head().abbreviatedId}"
+
 // this is probably poluting my version number w/ SNAPSHOT previous
 // version '1.0-SNAPSHOT'
 
@@ -35,7 +35,7 @@ jar {
     // the two below result in a jar file name with just the name and the version number. Really only need to specify
     // the version number to get this affect.
     archiveBaseName = "testJava"
-    archiveVersion = version
+    archiveVersion = "1.0.0-${grgit.head().abbreviatedId}"
     manifest {
         attributes(
                 'Main-Class': 'App'
