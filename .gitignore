@@ -17,8 +17,6 @@ scraps*
 ### See: https://medium.com/@petehouston/typical-gitignore-for-a-gradle-java-project-52cbe079a99c ###
 .gradle
 /build/
-!/build/libs/
-### Above: trying to keep the jar file available ### ###
 
 # Ignore Gradle GUI config
 gradle-app.setting
