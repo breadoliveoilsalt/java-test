@@ -21,6 +21,11 @@ dependencies {
 mainClassName = 'App'
 
 jar {
+    // sets the entire file name, that's it => archiveFileName = "nameSetInBuildGradleJavaTest"
+    // the two below result in a jar file name with just the name and the version number. Really only need to specify
+    // the version number to get this affect.
+    archiveBaseName = "testJava"
+    archiveVersion = "0.0.1"
     manifest {
         attributes(
                 'Main-Class': 'App'
