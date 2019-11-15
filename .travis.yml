@@ -1,8 +1,16 @@
 language: java
+#install: true
+#os: linux
+#dist: trusty
+#jdk: oraclejdk11
+
+#script:
+#  - ./gradlew build --scan -s
 
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
 cache:
   directories:
   - "$HOME/.gradle/caches/"
@@ -16,4 +24,8 @@ deploy:
   on:
     repo: breadoliveoilsalt/java-test
 
-
+# this is to allow all branches to be built
+branches:
+  only:
+    - gh-pages
+    - /.*/
