@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'com.palantir.git-version' version '<current version>'
 //    id "org.ajoberstar.grgit" version "4.0.0-rc.1"
 //    id 'org.ajoberstar.grgit' version '3.1.1'
 //    id "org.ajoberstar.grgit" version "4.0.0-rc.1"
@@ -29,7 +30,7 @@ jar {
     // Conversely, the two below result in a jar file name with just the name and the version number. Really only need to specify
     // the version number to get this affect.
     archiveBaseName = "testJava"
-    archiveVersion = "1.0.0" // -${grgit.head().abbreviatedId}"
+    archiveVersion = "v1.0.0" // -${grgit.head().abbreviatedId}"
     // Below is needed to give the jar file it's meta data so running the jar file works
     manifest {
         attributes(
