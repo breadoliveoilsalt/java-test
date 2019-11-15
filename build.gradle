@@ -30,7 +30,8 @@ jar {
     // Conversely, the two below result in a jar file name with just the name and the version number. Really only need to specify
     // the version number to get this affect.
     archiveBaseName = "testJava"
-    archiveVersion = "v1.0.0" // -${grgit.head().abbreviatedId}"
+    archiveVersion = versionDetails().gitHash
+//    archiveVersion = "v1.0.0" // -${grgit.head().abbreviatedId}"
     // Below is needed to give the jar file it's meta data so running the jar file works
     manifest {
         attributes(
