@@ -24,8 +24,9 @@ deploy:
   on:
     repo: breadoliveoilsalt/java-test
     branches:
-      - master
-      - travisRelease3
+      only:
+        - master
+        - travisRelease3
 
 # this is to allow all branches to be built
 # did not work, even though taken from travis page
