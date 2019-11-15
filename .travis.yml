@@ -29,6 +29,7 @@ deploy:
     repo: breadoliveoilsalt/java-test
     all_branches: true
     tags: true
+#
 #    branches:
 #      only:
 #        - master
