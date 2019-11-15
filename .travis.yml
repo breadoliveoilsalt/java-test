@@ -25,7 +25,12 @@ deploy:
     repo: breadoliveoilsalt/java-test
 
 # this is to allow all branches to be built
+# did not work, even though taken from travis page
+#branches:
+#  only:
+#    - gh-pages
+#    - /.*/
 branches:
   only:
-    - gh-pages
-    - /.*/
+    - master
+    - travisRelease2
