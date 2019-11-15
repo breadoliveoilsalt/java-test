@@ -33,4 +33,4 @@ deploy:
 branches:
   only:
     - master
-    - travisRelease2
+    - travisRelease3
