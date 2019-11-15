@@ -4,7 +4,8 @@ plugins {
     id 'com.palantir.git-version' version '0.12.2'
 }
 
-// application plugin requires mainClassName below
+// application plugin requires mainClassName below.  And application plug in is what allows `gradle run` command to work.
+// that is, simply typing `gradle run` knows to look to this class for the main() method to kick everything off.
 mainClassName = 'App'
 
 sourceCompatibility = 1.8
