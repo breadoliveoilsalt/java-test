@@ -1,13 +1,4 @@
 language: java
-#install: true
-#os: linux
-#dist: trusty
-#jdk: oraclejdk11
-#
-
-#script:
-#  - ./gradlew build --scan -s
-
 
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -29,20 +20,3 @@ deploy:
     repo: breadoliveoilsalt/java-test
     all_branches: true
     tags: true
-#
-#    branches:
-#      only:
-#        - master
-#        - travisRelease3
-#
-# this is to allow all branches to be built
-# did not work, even though taken from travis page
-#branches:
-#  only:
-#    - gh-pages
-#    - /.*/
-
-#branches:
-#  only:
-#    - master
-#    - travisRelease3

@@ -1,5 +1,2 @@
 rootProject.name = 'testingJava'
-// This seems to be optional
-// This actually seems to set the name of the jar file under build/libs...but not the version number or the snapshot prefix
-
 
