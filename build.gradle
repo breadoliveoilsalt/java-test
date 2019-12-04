@@ -18,6 +18,9 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
+distZip.enabled = false
+distTar.enabled = false
+
 jar {
     archiveBaseName = "testJava"
     archiveVersion = versionDetails().lastTag + "-" + versionDetails().gitHash
