@@ -18,6 +18,8 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
+// Prevents Gradle from building zip and tar files, but does not affect GitHub release...those files were never there.
+
 distZip.enabled = false
 distTar.enabled = false
 
