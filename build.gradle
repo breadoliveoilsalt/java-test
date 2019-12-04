@@ -23,6 +23,7 @@ dependencies {
 distZip.enabled = false
 distTar.enabled = false
 
+// jar file is built even when this is commented out
 jar {
     archiveBaseName = "testJava"
     archiveVersion = versionDetails().lastTag + "-" + versionDetails().gitHash
